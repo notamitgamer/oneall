@@ -1,5 +1,6 @@
 import tkinter as tk
 import random
+import re
 
 #def functions 
 
@@ -34,7 +35,7 @@ def sum_of_digit() :
 
     #label
 
-    header_label_sod = tk.Label(win_sod,text='\n\n\n\nSum Of Digit', font=('Georgia', 25, 'bold'), fg='white', bg='#242432')
+    header_label_sod = tk.Label(win_sod,text='\n\n\n\nSum Of Digit', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label_sod.grid(row=0, column=0, columnspan=2, padx=1, pady=20)
 
     inp_label_sod = tk.Label(win_sod,text='Enter input : ', font=('Arial', 15, 'bold'), fg='white', bg='#242432')
@@ -137,7 +138,7 @@ def simple() :
 
     # Header
 
-    header = tk.Label(win_simple, text='\n\n\nSimple Calculator', font=('Georgia', 25, 'bold'), fg='white', bg='#242432')
+    header = tk.Label(win_simple, text='\n\n\nSimple Calculator', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
     header.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
 
     # Input labels
@@ -215,7 +216,7 @@ def odd_even() :
 
     #labels and buttons
 
-    header_oe = tk.Label(win_oe, text="\n\n\n\n\nOdd or Even Checker", font=('Georgia', 25, 'bold'), fg='white', bg='#242432')
+    header_oe = tk.Label(win_oe, text="\n\n\n\n\nOdd or Even Checker", font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
     header_oe.grid(row=0, column=0, columnspan=2, padx=10, pady=10)
 
     input_label_oe = tk.Label(win_oe, text="Enter Number : ", font=("Arial", 12,'bold'), bg="#242432", fg='white')
@@ -265,7 +266,7 @@ def reverse_string() :
 
     #label
 
-    header_label = tk.Label(win_reverse, text='\n\n\n\nReverse String', font=('Georgia', 25, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_reverse, text='\n\n\n\nReverse String', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
 
     input_string_label = tk.Label(win_reverse, text='Enter a string: ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
@@ -348,7 +349,7 @@ def largest_element() :
 
     #label
 
-    header_label = tk.Label(win_largest, text='\n\n\n\nLargest Element', font=('Georgia', 25, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_largest, text='\n\n\n\nLargest Element', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
 
     input_total_label = tk.Label(win_largest, text='How many elements? : ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
@@ -425,7 +426,7 @@ def second_largest() :
 
     #label
 
-    header_label = tk.Label(win_second, text='\n\n\n\nSecond Largest', font=('Georgia', 25, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_second, text='\n\n\n\nSecond Largest', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
 
     input_total_label = tk.Label(win_second, text='How many elements? : ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
@@ -496,7 +497,7 @@ def fibonacci_series() :
 
     #label
 
-    header_label = tk.Label(win_fibonacci, text='\n\n\n\nFibonacci Series', font=('Georgia', 30, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_fibonacci, text='\n\n\n\nFibonacci Series', font=('Georgia', 30, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
 
     input_label = tk.Label(win_fibonacci, text='Enter a number : ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
@@ -560,7 +561,7 @@ def palindrome_check() :
 
     #label
 
-    header_label = tk.Label(win_palindrome, text='\n\n\n\nPalindrome Check', font=('Georgia', 25, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_palindrome, text='\n\n\n\nPalindrome Check', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
 
     input_label = tk.Label(win_palindrome, text='Enter a number: ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
@@ -624,7 +625,7 @@ def unique_elements() :
 
     #label
 
-    header_label = tk.Label(win_unique, text='\n\n\n\nUnique Elements', font=('Georgia', 25, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_unique, text='\n\n\n\nUnique Elements', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
 
     input_limit_label = tk.Label(win_unique, text='How many elements? : ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
@@ -694,7 +695,7 @@ def prime_check() :
 
     #label
 
-    header_label = tk.Label(win_prime, text='\n\n\n\nPrime Check', font=('Georgia', 25, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_prime, text='\n\n\n\nPrime Check', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
 
     input_label = tk.Label(win_prime, text='Enter a number: ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
@@ -724,12 +725,13 @@ def factorial_calculation() :
     #functions
 
     def calculate_factorial():
+
         result_label.config(text = '')
         error_label.config(text = '')
         try:
             inp = int(input_entry.get())
 
-            def check_factorial(n):
+            def check_factorial(n) :
                 if n < 0:
                     error_label.config(text="Factorial is not defined for negative numbers.")
                     return None
@@ -758,7 +760,7 @@ def factorial_calculation() :
 
     #label
 
-    header_label = tk.Label(win_factorial, text='\n\n\n\nFactorial Calculation', font=('Georgia', 25, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_factorial, text='\n\n\n\nFactorial Calculation', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
 
     input_label = tk.Label(win_factorial, text='Enter a number: ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
@@ -796,7 +798,7 @@ def multiplication_table() :
             rnge = int(input_range.get())
 
             table_text = f'\nBelow is the multiplication table of {inp} upto {rnge} : \n'
-            for item in range(1, rnge + 1):
+            for item in range(1, rnge + 1) :
                 table_text += f'{inp} x {item} = {item * inp}\n'
 
             result_label.config(text=table_text)
@@ -806,7 +808,7 @@ def multiplication_table() :
         except Exception as e:
             error_label.config(text=f"An error occurred: {e}")
 
-    #window setting
+    #window setting hello world how are you? are you afk no why not be afk
 
     win_multiplication = tk.Toplevel(window)
     win_multiplication.title('Multiplication Table')
@@ -817,7 +819,7 @@ def multiplication_table() :
 
     #label
 
-    header_label = tk.Label(win_multiplication, text='Multiplication Table', font=('Georgia', 30, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_multiplication, text='Multiplication Table', font=('Georgia', 30, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
 
     input_number_label = tk.Label(win_multiplication, text='Enter a number: ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
@@ -878,7 +880,6 @@ def armstrong_check() :
             error_label.config(text=f"An error occurred: {e}")
 
     #window setting
-
     win_armstrong = tk.Toplevel(window)
     win_armstrong.title('Armstrong Check')
     win_armstrong.configure(bg='#242432')
@@ -887,8 +888,7 @@ def armstrong_check() :
     win_armstrong.columnconfigure(1, weight=1)
 
     #label
-
-    header_label = tk.Label(win_armstrong, text='\n\n\n\nArmstrong Check', font=('Georgia', 25, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_armstrong, text='\n\n\n\nArmstrong Check', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
 
     input_label = tk.Label(win_armstrong, text='Enter a number: ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
@@ -898,7 +898,6 @@ def armstrong_check() :
     input_entry.grid(row=1, column=1, padx=5, pady=5)
 
     #buttons
-
     check_button = tk.Button(win_armstrong, text='Check', font=('Arial', 13, 'bold'), command=check_armstrong, bg='#37374D', fg='white', relief='flat', activebackground='#4D4D64', activeforeground='white')
     check_button.grid(row=2, column=0, columnspan=2, padx=5, pady=20)
 
@@ -954,7 +953,7 @@ def guessing_game() :
 
     #label
 
-    header_label = tk.Label(win_guessing, text='\n\n\n\nGuessing Game', font=('Georgia', 25, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_guessing, text='\n\n\n\nGuessing Game', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
 
     input_label = tk.Label(win_guessing, text='Enter your choice (1-100): ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
@@ -1017,7 +1016,7 @@ def vowel_consonant_count() :
 
     #label
 
-    header_label = tk.Label(win_vowel_consonant, text='\n\n\n\nVowel Consonant Count', font=('Georgia', 25, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_vowel_consonant, text='\n\n\n\nVowel Consonant Count', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
 
     input_label = tk.Label(win_vowel_consonant, text='Enter the string: ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
@@ -1088,7 +1087,7 @@ def even_list() :
 
     # Labels
 
-    header_label = tk.Label(win_even, text='\n\n\nEven List', font=('Georgia', 30, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_even, text='\n\n\nEven List', font=('Georgia', 30, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=5)
 
     safe_header_label = tk.Label(win_even, text='\n\nPlease maintain a SAFE difference between starting and ending\n', font=('Arial', 15, 'bold'), fg='red', bg='#242432')
@@ -1189,7 +1188,7 @@ def string_operation() :
 
     # Labels
 
-    header_label = tk.Label(win_string, text='\n\n\nString Operation', font=('Georgia', 30, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_string, text='\n\n\nString Operation', font=('Georgia', 30, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=5)
 
     safe_header_label = tk.Label(win_string, text='\n\nThis was a test given by Gemini AI\n', font=('Arial', 15, 'bold'), fg='red', bg='#242432')
@@ -1225,7 +1224,7 @@ def string_operation() :
     error_label.grid(row=7, column=0, columnspan=2, padx=5, pady=0)
 
 
-def text_file_handling() :
+def find_topper() :
 
     #functions
 
@@ -1287,7 +1286,7 @@ def text_file_handling() :
 
     # Labels
 
-    header_label = tk.Label(win_text_file, text='\n\n\n\nFind the Highest Scorer', font=('Georgia', 30, 'bold'), fg='white', bg='#242432')
+    header_label = tk.Label(win_text_file, text='\n\n\n\nFind the Highest Scorer', font=('Georgia', 30, 'bold'), fg='#2DD6D3', bg='#242432')
     header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=5)
 
     safe_header_label = tk.Label(win_text_file, text='This was a test given by Gemini AI\n', font=('Arial', 15, 'bold'), fg='red', bg='#242432')
@@ -1317,6 +1316,237 @@ def text_file_handling() :
     error_label.grid(row=7, column=0, columnspan=2, padx=5, pady=0)
 
 
+def password_generator():
+    
+    # logic function
+
+    def generate_password():
+        result_label.config(text='')
+        error_label.config(text='')
+
+        try:
+            length = int(input_entry.get())
+            temp = length
+
+            if length < 6:
+                error_label.config(text='Reminder: Safe password length should be at least 6.', fg='orange')
+            else:
+                password = ''
+                chars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM123456789.+-*/@#%&!:;'
+                for _ in range(length):
+                    password += random.choice(chars)
+                result_label.config(text=f'Your {temp}-character password is:\n{password}', fg='green')
+
+        except ValueError:
+            error_label.config(text="Invalid input. Please enter a number.")
+        except Exception as e:
+            error_label.config(text=f"An error occurred: {e}")
+
+    # window setting
+
+    win_password = tk.Toplevel(window)
+    win_password.title('Password Generator')
+    win_password.configure(bg='#242432')
+    win_password.attributes("-fullscreen", True)
+    win_password.columnconfigure(0, weight=1)
+    win_password.columnconfigure(1, weight=1)
+
+    # labels
+
+    header_label = tk.Label(win_password, text='\n\n\n\nPassword Generator', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
+    header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=5)
+
+    safe_header_label = tk.Label(win_password, text='This was a test given by YT Code With Mosh (Mosh Hamedani)\n\n', font=('Arial', 13, 'bold'), fg='red', bg='#242432')
+    safe_header_label.grid(row=1, column=0, columnspan=2, padx=5, pady=5)
+
+    input_label = tk.Label(win_password, text='Enter password length: ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
+    input_label.grid(row=2, column=0, padx=5, pady=5, sticky='ew')
+
+    input_entry = tk.Entry(win_password, font=('Arial', 15), bg='#242432', fg='white', insertbackground='white')
+    input_entry.grid(row=2, column=1, padx=5, pady=5)
+
+    # buttons
+    
+    generate_button = tk.Button(win_password, text='Generate Password', font=('Arial', 13, 'bold'), command=generate_password, bg='#37374D', fg='white', relief='flat', activebackground='#4D4D64', activeforeground='white')
+    generate_button.grid(row=3, column=0, columnspan=2, padx=5, pady=20)
+
+    close_button = tk.Button(win_password, text='Close Window', command=win_password.destroy, font=('Arial', 13, 'bold'), fg='white', bg='#37374D', relief='flat', activebackground='#4D4D64', activeforeground='white')
+    close_button.grid(row=6, column=0, columnspan=2, padx=5, pady=5)
+
+    # output
+    result_label = tk.Label(win_password, text='', font=('Arial', 15, 'bold'), fg='green', bg='#242432')
+    result_label.grid(row=4, column=0, columnspan=2, padx=5, pady=0)
+
+    error_label = tk.Label(win_password, text='', font=('Arial', 15, 'bold'), fg='red', bg='#242432')
+    error_label.grid(row=5, column=0, columnspan=2, padx=5, pady=0)
+
+
+def rock_paper_scissors():
+
+    #functions
+
+    def play_game():
+        result_label.config(text='')
+        error_label.config(text='')
+        computer_choice_label.config(text='')
+
+        try:
+            player_choice = input_entry.get().lower()
+            possible_choices = ['rock', 'paper', 'scissor']
+            r, p, s = possible_choices
+
+            if player_choice not in possible_choices:
+                error_label.config(text='Enter a valid choice: Rock, Paper or Scissor!')
+            else:
+                computer_choice = random.choice(possible_choices)
+                computer_choice_label.config(text=f'Computer chose: {computer_choice.capitalize()}')
+
+                result = ''
+                if player_choice == computer_choice:
+                    result = 'd'
+                elif player_choice == r:
+                    result = 'w' if computer_choice == s else 'l'
+                elif player_choice == s:
+                    result = 'w' if computer_choice == p else 'l'
+                elif player_choice == p:
+                    result = 'w' if computer_choice == r else 'l'
+
+                if result == 'd':
+                    result_label.config(text='Match DRAW!', fg='yellow')
+                elif result == 'l':
+                    result_label.config(text='You LOST!', fg='red')
+                elif result == 'w':
+                    result_label.config(text='You WON!', fg='green')
+
+        except Exception as e:
+            error_label.config(text=f"An error occurred: {e}", fg='red')
+
+    # window setup
+
+    win_rps = tk.Toplevel(window)
+    win_rps.title('Rock Paper Scissors Game')
+    win_rps.configure(bg='#242432')
+    win_rps.attributes("-fullscreen", True)
+    win_rps.columnconfigure(0, weight=1)
+    win_rps.columnconfigure(1, weight=1)
+
+    # header
+    
+    header_label = tk.Label(win_rps, text='\n\n\nRock Paper Scissors Game ', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
+    header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=5)
+
+    safe_header_label = tk.Label(win_rps, text='Make your choice below and challenge the computer!', font=('Arial', 13, 'bold'), fg='#2DD6D3', bg='#242432')
+    safe_header_label.grid(row=1, column=0, columnspan=2, padx=5, pady=5)
+
+    safe_header_label_1 = tk.Label(win_rps, text='This was a test given by YT Code With Mosh (Mosh Hamedani)\n\n', font=('Arial', 13, 'bold'), fg='red', bg='#242432')
+    safe_header_label_1.grid(row=2, column=0, columnspan=2, padx=5, pady=5) 
+
+    # input
+
+    input_label = tk.Label(win_rps, text='Your Choice (rock/paper/scissor): ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
+    input_label.grid(row=3, column=0, padx=5, pady=5, sticky='ew')
+
+   
+    input_entry = tk.Entry(win_rps, font=('Arial', 15), bg='#242432', fg='white', insertbackground='white')
+    input_entry.grid(row=3, column=1, padx=5, pady=5)
+
+    # button
+
+    play_button = tk.Button(win_rps, text='Play Game', font=('Arial', 13, 'bold'), command=play_game, bg='#37374D', fg='white', relief='flat', activebackground='#4D4D64', activeforeground='white')
+    play_button.grid(row=4, column=0, columnspan=2, padx=5, pady=20)
+
+    close_button = tk.Button(win_rps, text='Close Window', command=win_rps.destroy, font=('Arial', 13, 'bold'), fg='white', bg='#37374D', relief='flat', activebackground='#4D4D64', activeforeground='white')
+    close_button.grid(row=8, column=0, columnspan=2, padx=5, pady=5)
+
+    # output
+    
+    computer_choice_label = tk.Label(win_rps, text='', font=('Arial', 15, 'bold'), fg='#2DD6D3', bg='#242432')
+    computer_choice_label.grid(row=5, column=0, columnspan=2, padx=5, pady=0)
+
+    result_label = tk.Label(win_rps, text='', font=('Arial', 15, 'bold'), fg='green', bg='#242432')
+    result_label.grid(row=6, column=0, columnspan=2, padx=5, pady=0)
+
+    error_label = tk.Label(win_rps, text='', font=('Arial', 15, 'bold'), fg='red', bg='#242432')
+    error_label.grid(row=7, column=0, columnspan=2, padx=5, pady=0)
+
+
+def counter_file():
+    
+    #functions
+
+    def count_stats():
+        result_label.config(text='')
+        error_label.config(text='')
+
+        filename = input_entry.get().replace('\\', '\\\\')
+        
+        char_count = 0
+        word_count = 0
+        line_count = 0
+
+        try:
+            with open(filename, 'r') as f:
+                for line in f:
+                    line_count += 1
+                    cleaned_line = line.strip()
+                    if cleaned_line:
+                        char_count += len(cleaned_line)
+                        words = re.findall(r"\b[\w'-]+\b", cleaned_line)
+                        word_count += len(words)
+
+            display_filename = filename.replace('\\\\', '\\')
+            result_label.config(
+                text=f"File: {display_filename}\nLines: {line_count}\nWords: {word_count}\nCharacters: {char_count}",
+                fg='green'
+            )
+        except FileNotFoundError:
+            error_label.config(text=f"Error: File '{filename.replace('\\\\', '\\')}' not found.")
+        except Exception as e:
+            error_label.config(text=f"An error occurred: {e}")
+
+    # window setup
+
+    win_counter = tk.Toplevel(window)
+    win_counter.title('File Counter')
+    win_counter.configure(bg='#242432')
+    win_counter.attributes("-fullscreen", True)
+    win_counter.columnconfigure(0, weight=1)
+    win_counter.columnconfigure(1, weight=1)
+
+    # labels
+
+    header_label = tk.Label(win_counter, text='\n\n\n\nLetter, Word, Line Counter', font=('Georgia', 25, 'bold'), fg='#2DD6D3', bg='#242432')
+    header_label.grid(row=0, column=0, columnspan=2, padx=20, pady=5)
+
+    safe_header_label = tk.Label(win_counter, text='Counts lines, words, and characters in a given file\n', font=('Arial', 13, 'bold'), fg='#2DD6D3', bg='#242432')
+    safe_header_label.grid(row=1, column=0, columnspan=2, padx=5, pady=5)
+
+    safe_header_label_1 = tk.Label(win_counter, text='This was a test given by YT Code With Mosh (Mosh Hamedani)\n', font=('Arial', 13, 'bold'), fg='red', bg='#242432')
+    safe_header_label_1.grid(row=2, column=0, columnspan=2, padx=5, pady=5)
+
+    input_label = tk.Label(win_counter, text='Enter file name or full path: ', font=('Arial', 15, 'bold'), bg='#242432', fg='white')
+    input_label.grid(row=3, column=0, padx=5, pady=5, sticky='ew')
+
+    input_entry = tk.Entry(win_counter, font=('Arial', 15), bg='#242432', fg='white', insertbackground='white')
+    input_entry.grid(row=3, column=1, padx=5, pady=5)
+
+    # buttons
+
+    count_button = tk.Button(win_counter, text='Count File Data', font=('Arial', 13, 'bold'), command=count_stats, bg='#37374D', fg='white', relief='flat', activebackground='#4D4D64', activeforeground='white')
+    count_button.grid(row=4, column=0, columnspan=2, padx=5, pady=20)
+
+    close_button = tk.Button(win_counter, text='Close Window', command=win_counter.destroy, font=('Arial', 13, 'bold'), fg='white', bg='#37374D', relief='flat', activebackground='#4D4D64', activeforeground='white')
+    close_button.grid(row=7, column=0, columnspan=2, padx=5, pady=5)
+
+    # output
+
+    result_label = tk.Label(win_counter, text='', font=('Arial', 15, 'bold'), fg='green', bg='#242432')
+    result_label.grid(row=5, column=0, columnspan=2, padx=5, pady=0)
+
+    error_label = tk.Label(win_counter, text='', font=('Arial', 15, 'bold'), fg='red', bg='#242432')
+    error_label.grid(row=6, column=0, columnspan=2, padx=5, pady=0)
+
+
 #creating the main window
 
 window = tk.Tk()
@@ -1334,7 +1564,7 @@ window.columnconfigure(2, weight=1)
 
 # Header label
 
-header_label = tk.Label(window, text='\nContents', font=('Garamond', 50, 'bold'), fg='white', bg='#242432')
+header_label = tk.Label(window, text='\nContents', font=('Garamond', 50, 'bold'), fg='#2DD6D3', bg='#242432')
 header_label.grid(row=0, column=0, columnspan=3, padx=20, pady=20, sticky='ew') 
 
 # Style constants
@@ -1351,7 +1581,7 @@ button_height = 2
 
 # Button creation
 
-button_simple = tk.Button(window, text='simple', command=simple)
+button_simple = tk.Button(window, text='Simple', command=simple)
 button_sod = tk.Button(window, text='Sum of Digit', command=sum_of_digit)
 button_oe = tk.Button(window, text='Odd Even Check', command=odd_even)
 button_reverse = tk.Button(window, text='Reverse String', command=reverse_string)
@@ -1368,7 +1598,10 @@ button_guessing = tk.Button(window, text='Guessing Game', command=guessing_game)
 button_vowel_consonant = tk.Button(window, text='Vowel Consonant Count', command=vowel_consonant_count)
 button_even_list = tk.Button(window, text='Get Even List', command=even_list)
 button_string_opr = tk.Button(window, text='String Operation', command=string_operation)
-button_file_handling = tk.Button(window, text='Text File Handeling', command=text_file_handling)
+button_find_topper = tk.Button(window, text='Find Topper', command=find_topper)
+button_password_generator = tk.Button(window, text='Password Generator', command=password_generator)
+button_rps = tk.Button(window, text='Rock Paper Scissor', command=rock_paper_scissors)
+button_counter_file = tk.Button(window, text='W,L,L counter', command=counter_file)
 close_button = tk.Button(window, text='close window', command=window.destroy)
 
 # Apply styles to buttons
@@ -1378,33 +1611,39 @@ buttons = [
     button_largest, button_second_largest, button_fibonacci,
     button_palindrome, button_unique, button_prime, button_factorial,
     button_multiplication, button_armstrong, button_guessing,
-    button_vowel_consonant, button_even_list, button_string_opr, button_file_handling, close_button
+    button_vowel_consonant, button_even_list, button_string_opr, 
+    button_find_topper,button_password_generator, 
+    button_rps, button_counter_file, close_button
 ]
 
 for button in buttons:
-    button.config(font=button_font, fg=button_fg, bg=button_bg, padx=button_padx, pady=button_pady,relief=button_relief, width=button_width, height=button_height)
+    button.config(font=button_font, fg=button_fg, bg=button_bg, padx=button_padx, 
+                  pady=button_pady,relief=button_relief, width=button_width, height=button_height)
 
 # Grid layout
 
-button_simple.grid(row=1, column=0, padx=5, pady=5, sticky='ew')
-button_sod.grid(row=1, column=1, padx=5, pady=5, sticky='ew')
-button_oe.grid(row=1, column=2, padx=5, pady=5, sticky='ew')
-button_reverse.grid(row=2, column=0, padx=5, pady=5, sticky='ew')
-button_largest.grid(row=2, column=1, padx=5, pady=5, sticky='ew')
-button_second_largest.grid(row=2, column=2, padx=5, pady=5, sticky='ew')
-button_fibonacci.grid(row=3, column=0, padx=5, pady=5, sticky='ew')
-button_palindrome.grid(row=3, column=1, padx=5, pady=5, sticky='ew')
-button_unique.grid(row=3, column=2, padx=5, pady=5, sticky='ew')
-button_prime.grid(row=4, column=0, padx=5, pady=5, sticky='ew')
-button_factorial.grid(row=4, column=1, padx=5, pady=5, sticky='ew')
-button_multiplication.grid(row=4, column=2, padx=5, pady=5, sticky='ew')
-button_armstrong.grid(row=5, column=0, padx=5, pady=5, sticky='ew')
-button_guessing.grid(row=5, column=1, padx=5, pady=5, sticky='ew')
-button_vowel_consonant.grid(row=5, column=2, padx=5, pady=5, sticky='ew')
-button_even_list.grid(row=6, column=0, padx=5, pady=5, sticky='ew')
-button_string_opr.grid(row=6, column=1, padx=5, pady=5, sticky='ew')
-button_file_handling.grid(row=6, column=2, padx=5, pady=5, sticky='ew')
-close_button.grid(row=7, column=0, columnspan=3, padx=5, pady=20)
+button_simple.grid(row=1, column=0, padx=3, pady=3, sticky='ew')
+button_sod.grid(row=1, column=1, padx=3, pady=3, sticky='ew')
+button_oe.grid(row=1, column=2, padx=3, pady=3, sticky='ew')
+button_reverse.grid(row=2, column=0, padx=3, pady=3, sticky='ew')
+button_largest.grid(row=2, column=1, padx=3, pady=3, sticky='ew')
+button_second_largest.grid(row=2, column=2, padx=3, pady=3, sticky='ew')
+button_fibonacci.grid(row=3, column=0, padx=3, pady=3, sticky='ew')
+button_palindrome.grid(row=3, column=1, padx=3, pady=3, sticky='ew')
+button_unique.grid(row=3, column=2, padx=3, pady=3, sticky='ew')
+button_prime.grid(row=4, column=0, padx=3, pady=3, sticky='ew')
+button_factorial.grid(row=4, column=1, padx=3, pady=3, sticky='ew')
+button_multiplication.grid(row=4, column=2, padx=3, pady=3, sticky='ew')
+button_armstrong.grid(row=5, column=0, padx=3, pady=3, sticky='ew')
+button_guessing.grid(row=5, column=1, padx=3, pady=3, sticky='ew')
+button_vowel_consonant.grid(row=5, column=2, padx=3, pady=3, sticky='ew')
+button_even_list.grid(row=6, column=0, padx=3, pady=3, sticky='ew')
+button_string_opr.grid(row=6, column=1, padx=3, pady=3, sticky='ew')
+button_find_topper.grid(row=6, column=2, padx=3, pady=3, sticky='ew')
+button_password_generator.grid(row=7, column=0, padx=3, pady=3, sticky='ew')
+button_rps.grid(row=7, column=1, padx=3, pady=3, sticky='ew')
+button_counter_file.grid(row=7, column=2, padx=3, pady=3, sticky='ew')
+close_button.grid(row=8, column=0, columnspan=3, padx=3, pady=20)
 
 # Looping window
 
